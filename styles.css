@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: auto;
+
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    background-color: #CDCDCD;
+
+    font-size: 1rem;
+}
+
+header{
+    width: 95vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+header, header nav, header img{
+
+    background-color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+header a{
+    color: #FFF;
+    background-color: #000;
+    gap: 1rem;
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#banner img{
+    height: 50vh;
+    width: 95vw;
+}
+
+.imagePhilosopher{
+    width: 95vw;
+}
