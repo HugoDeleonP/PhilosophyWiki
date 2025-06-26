@@ -106,12 +106,24 @@ footer{
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
+
+/* - Seção de destaque com imagem e texto lado à lado;
+- Cards em 2 colunas
+- Fonte aumenta com `clamp()`*/
+
     #menuHamburger{
         display: none;
     }
 
     #banner img{
         height: 50vh;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;   
     }
 }
 
