@@ -6,27 +6,41 @@
     text-decoration: none;
     color: #000;
     background-color: #CDCDCD;
+    text-align: justify;
 
-    font-size: 1rem;
+    font-size: 1.25rem;
+
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+
 }
 
 header{
-    width: 95vw;
-    
+        
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-self: center;
     flex-wrap: wrap;
 }
 
-header, header nav, header img{
+header h1{
+    color: #bfa49F;
+    font-size: 1.2rem;
 
+
+}
+
+header, header h1, header nav, header img, #navList{ 
     background-color: #000;
 }
 
 img{
     object-fit: cover;
+    display: flex;
+}
+
+#menuHamburger, #letterPhi{
+    align-self: center;
 }
 
 header a{
@@ -43,10 +57,66 @@ header a{
 }
 
 #banner img{
-    height: 50vh;
-    width: 95vw;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
 }
 
 .imagePhilosopher{
-    width: 95vw;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+}
+
+.textPhilosopher p{
+    background-color: #D99B50;
+}
+
+#banner p, article p, article h2{
+    margin: 3vh 0vh;
+    text-align: center;
+}
+
+article h2{
+    font-size: 2rem;
+}
+
+footer{
+    text-align: center;
+}
+
+@media(max-width: 470px){
+    .imagePhilosopher{
+        width: 65vw;
+    }
+
+    *{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    #navList{
+        display: none;
+    }
+
+    #banner img{
+        height: 65vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #menuHamburger{
+        display: none;
+    }
+
+    #banner img{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1025px){
+    #menuHamburger{
+        display: none;
+    }
 }
