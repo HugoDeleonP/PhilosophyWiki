@@ -72,13 +72,18 @@ header a{
     background-color: #D99B50;
 }
 
-#banner p, article p, article h2{
+#banner p, article p{
     margin: 3vh 0vh;
     text-align: center;
 }
 
 article h2{
     font-size: 2rem;
+    text-align: center;
+}
+
+.datePhilosopher{
+    margin-bottom: 2.5%;
 }
 
 footer{
@@ -93,6 +98,16 @@ footer{
     *{
         font-size: 1rem;
     }
+
+    header img{
+        height: 10vh;
+        width: 20vw;
+        object-fit: contain;
+    }
+
+    header{
+        height: 10vh;
+    }
 }
 
 @media(max-width: 768px) {
@@ -103,6 +118,8 @@ footer{
     #banner img{
         height: 65vh;
     }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -119,11 +136,23 @@ footer{
         height: 50vh;
     }
 
-    article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: center;   
+    .philosopher{
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    }
+
+    .datePhilosopher, .namePhilosopher{
+        grid-column: 1 / 1;
+        grid-row: 1/1;
+    }
+
+    .imagePhilosopher{
+        grid-column: 1/2;
+    }
+
+    .textPhilosopher{
+        grid-column: 1/2;
+        grid-row: 3/3;
     }
 }
 
