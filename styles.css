@@ -21,6 +21,8 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    width: 100vw;
 }
 
 header h1{
@@ -52,8 +54,18 @@ header a{
 #banner{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#banner #fraseCitacao{
+    margin-bottom: 0%;
+}
+
+#citacao #autorCitacao{
+    margin-top: 0%;
+    align-self: flex-end;
 }
 
 #banner img{
@@ -119,7 +131,9 @@ footer{
         height: 65vh;
     }
 
-
+    #letterPhi, #menuHamburger{
+        height: auto;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -128,36 +142,88 @@ footer{
 - Cards em 2 colunas
 - Fonte aumenta com `clamp()`*/
 
+    #letterPhi{
+        height: 15vh;
+    }
+
+    #banner{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        
+    }
+
+    #banner img{
+        width: 60vw;
+        height: 50vh;
+        margin: 1vw, 2vh;
+    }
+
     #menuHamburger{
         display: none;
     }
 
     #banner img{
-        height: 50vh;
+
+    }
+
+    article{
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+
     }
 
     .philosopher{
-        display: grid;
-        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+        align-content: start;
+        gap: 2vw;
+        margin: 0vh 2vw;
     }
 
-    .datePhilosopher, .namePhilosopher{
-        grid-column: 1 / 1;
-        grid-row: 1/1;
+    .philosopher img{
+        width: 40vw;
+        height: 40vh;
     }
 
-    .imagePhilosopher{
-        grid-column: 1/2;
-    }
-
-    .textPhilosopher{
-        grid-column: 1/2;
-        grid-row: 3/3;
-    }
+    
 }
 
 @media (min-width: 1025px){
     #menuHamburger{
         display: none;
     }
+
+    #letterPhi{
+        height: 15vh;
+    }
+
+    article{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
+    }
+
+    .philosopher{
+        align-content: start;
+        gap: 2vw;
+        margin: 0vh 2vw;
+        
+    }
+
+    .philosopher img{
+        width: 20vw;
+        height: 30vh;
+    }
+
+    #banner{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        
+    }
+
+    #banner img{
+        width: 60vw;
+        height: 50vh;
+        margin: 1vw, 2vh;
+    }
+
+
 }
