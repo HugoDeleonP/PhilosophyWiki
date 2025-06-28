@@ -8,7 +8,7 @@
     background-color: #CDCDCD;
     text-align: justify;
 
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -27,7 +27,7 @@ header{
 
 header h1{
     color: #bfa49F;
-    font-size: 1.2rem;
+    font-size: 2rem;
 
 
 }
@@ -75,8 +75,7 @@ header a{
 }
 
 .imagePhilosopher{
-    width: 50vw;
-    height: 50vh;
+
     display: flex;
 }
 
@@ -90,7 +89,7 @@ header a{
 }
 
 article h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -103,11 +102,9 @@ footer{
 }
 
 @media(max-width: 470px){
-    .imagePhilosopher{
-        width: 65vw;
-    }
 
-    *{
+
+    p{
         font-size: 1rem;
     }
 
@@ -134,12 +131,17 @@ footer{
     #letterPhi, #menuHamburger{
         height: auto;
     }
+
+    .philosopher img{
+        object-fit: cover;
+        height: 50vh;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
 
-/* - Seção de destaque com imagem e texto lado à lado;
-- Cards em 2 colunas
+/* - Seção de destaque com imagem e texto lado à lado; == feito
+- Cards em 2 colunas == feito
 - Fonte aumenta com `clamp()`*/
 
     #letterPhi{
@@ -183,7 +185,9 @@ footer{
         height: 40vh;
     }
 
-    
+    h2{
+        font-size: (0.5rem, 1.25rem, 1.5rem);
+    }
 }
 
 @media (min-width: 1025px){
@@ -203,6 +207,7 @@ footer{
 
     .philosopher{
         align-content: start;
+        align-items: start;
         gap: 2vw;
         margin: 0vh 2vw;
         
@@ -211,6 +216,7 @@ footer{
     .philosopher img{
         width: 20vw;
         height: 30vh;
+        object-position: 70% 30%;
     }
 
     #banner{
