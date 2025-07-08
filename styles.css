@@ -28,8 +28,10 @@ header{
 header h1{
     color: #bfa49F;
     font-size: 2rem;
+}
 
-
+#navList a{
+    margin: 0.75rem;
 }
 
 header, header h1, header nav, header img, #navList{ 
@@ -155,8 +157,7 @@ footer{
 - Fonte aumenta com `clamp()`*/
 
     header h1, header a{
-        font-size: clamp(1.25rem, 1rem, 0.75rem);
-        font-size: clamp(0.75rem, 1rem, 1.25rem);
+        font-size: clamp(1rem, 3vh, 3rem);
     }
 
     header img{
@@ -192,8 +193,7 @@ footer{
     }
 
     article p{
-        font-size: clamp(1rem, 0.75rem, 0.5rem);
-        font-size: clamp(0.5rem, 00.75rem, 1rem);
+        font-size: clamp(0.5rem, 0.75rem, 1rem);
     }
 
     .philosopher{
@@ -254,7 +254,6 @@ footer{
     }
 
     header h1, header a{
-        font-size: clamp(1.25rem, 1rem, 0.75rem);
         font-size: clamp(0.75rem, 1rem, 1.25rem);
     }
 
@@ -264,8 +263,8 @@ footer{
         object-fit: contain;
     }
 
-    article p{
-        font-size: clamp(1rem, 0.75rem, 0.5rem);
-        font-size: clamp(0.5rem, 00.75rem, 1rem);
+    article p, footer p{
+        font-size: clamp(0.5rem, 0.75rem, 1rem);
     }
+
 }
