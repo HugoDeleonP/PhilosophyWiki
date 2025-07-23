@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente dourado para o fundo -->
+    <radialGradient id="golden" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="100%" stop-color="#bfa45c"/>
+    </radialGradient>
+
+    <!-- Sombra -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Círculo externo (estilo Φ) -->
+  <circle cx="32" cy="32" r="30" fill="url(#golden)" stroke="#7c653a" stroke-width="2"/>
+
+  <!-- Lua crescente centralizada -->
+  <path 
+    d="
+      M 32 16
+      A 16 16 0 1 0 32 48
+      A 10 16 0 1 1 32 16
+    "
+    fill="#7c653a"
+    filter="url(#shadow)"
+  />
+</svg>
