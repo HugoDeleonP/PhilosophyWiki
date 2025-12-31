@@ -1,0 +1,49 @@
+header{
+        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100vw;
+}
+
+header h1{
+    color: #bfa49F;
+    font-size: 2rem;
+}
+
+#navList a{
+    margin: 0.75rem;
+}
+
+header, header h1, header nav, header img, #navList{ 
+    background-color: #000;
+}
+
+#menuHamburger, #letterPhi{
+    align-self: center;
+}
+
+header a{
+    color: #FFF;
+    background-color: #000;
+    gap: 1rem;
+}
+
+@media(max-width: 768px){
+    #navList{
+        display: none;
+    }
+
+    header img{
+        height: 5vh;
+        width: 15vw;
+        object-fit: contain;
+    }
+
+    #letterPhi, #menuHamburger{
+        height: auto;
+    }    
+}
+

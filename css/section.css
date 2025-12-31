@@ -1,0 +1,22 @@
+#banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#banner #fraseCitacao{
+    margin-bottom: 0%;
+}
+
+#citacao #autorCitacao{
+    margin-top: 0%;
+    align-self: flex-end;
+}
+
+#banner img{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+}

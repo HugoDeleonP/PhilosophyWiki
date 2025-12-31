@@ -1,0 +1,24 @@
+.imagePhilosopher{
+
+    display: flex;
+}
+
+.textPhilosopher p{
+    background-color: #D99B50;
+}
+
+/*SEPARAR! banner e article*/
+
+#banner p, article p{
+    margin: 3vh 0vh;
+    text-align: center;
+}
+
+article h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.datePhilosopher{
+    margin-bottom: 2.5%;
+}
