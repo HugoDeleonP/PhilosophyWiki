@@ -1,9 +1,9 @@
-.imagePhilosopher{
-
+.philosopher__image{
+    width: 100%;
     display: flex;
 }
 
-.textPhilosopher p{
+.philosopher__text p{
     background-color: #D99B50;
 }
 
@@ -14,11 +14,11 @@
     text-align: center;
 }
 
-article h2{
+.philosopher__credentials{
     font-size: 1.5rem;
     text-align: center;
 }
 
-.datePhilosopher{
+.philosopher__date{
     margin-bottom: 2.5%;
 }

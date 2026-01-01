@@ -1,27 +1,28 @@
-header{
+.header{
         
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 100vw;
-}
 
-header h1{
-    color: #bfa49F;
-    font-size: 2rem;
-}
-
-#navList a{
-    margin: 0.75rem;
-}
-
-header, header h1, header nav, header img, #navList{ 
     background-color: #000;
 }
 
-#menuHamburger, #letterPhi{
+.header__name-website{
+    color: #bfa49F;
+    font-size: clamp(1.5rem, 2.5vw, 6rem);
+}
+
+.header__routes{
+    margin: 0.75rem;
+}
+
+.header *{ 
+    background-color: inherit;
+}
+
+.header__icon{
     align-self: center;
 }
 
@@ -32,18 +33,22 @@ header a{
 }
 
 @media(max-width: 768px){
-    #navList{
+    .header__routes{
         display: none;
     }
 
-    header img{
+    .header__icon{
         height: 5vh;
         width: 15vw;
         object-fit: contain;
+        height: auto;
+
     }
 
-    #letterPhi, #menuHamburger{
-        height: auto;
-    }    
 }
 
+@media(min-width: 769px) {
+    .header__menu-hamburger{
+        display: none;
+    }
+}
